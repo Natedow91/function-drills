@@ -12,8 +12,10 @@
 */
 
 //CODE HERE
-
-
+function helloWorld(name){
+  console.log(name)
+}
+helloWorld ('Hello, world')
 ////////////////// PROBLEM 2 ////////////////////
 
 /*
@@ -21,8 +23,11 @@
 */
 
 //CODE HERE
+const jsNinja = (person1) => {
+  console.log(`${person1} I am a JavaScript Ninja`)
+}
 
-
+jsNinja('Nate,')
 ////////////////// PROBLEM 3 ////////////////////
 /*
   Create a function called printName which takes in a person's name and console logs it.
@@ -31,8 +36,10 @@
 */
 
 //CODE HERE
-
-
+function printName(name){
+  console.log(name)
+}
+printName('Nate')
 ////////////////// PROBLEM 4 ////////////////////
 /*
   Create a function called greeting that
@@ -59,6 +66,20 @@
 */
 
 //CODE HERE
+// const compareNums = (num1, num2) => {
+//   if (num1 > num2)
+//   return num1 
+//   else if (num2 > num1)
+//   return num2
+//   else (num1 = num2)
+//   return (num1 && num2 )
+
+//   let Num1 = 15 
+//   let num2 = 25
+
+// }
+
+
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -70,8 +91,15 @@
 */
 
 //CODE HERE
+function add(a, b){
+let parseInt1 = parseInt(a)
+let parseInt2 = parseInt(b)
+return parseInt1 + parseInt2;
+}
 
 
+let sum = add 
+console.log(sum(14, 7));
 ////////////////// PROBLEM 7 ////////////////////
 
 /*
@@ -85,7 +113,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+"expression"
 
 
 
@@ -100,10 +128,11 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
+"arrow"
 // declaration
 // expression
 
+const exclaimThree = str => str.toUpperCase() + '!!!'
 /*
   Rewrite exclaimTwo to be a single line.
   Call your new function exclaimThree
@@ -125,7 +154,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+"declaration"
 // expression
 
 
@@ -139,7 +168,17 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function nameCheck(name){
+  if(name === 'Steven'){
+    return('what is up steven')
+  } else if (name === 'Bryan'){
+    return('Hey Bryan')
+  }else 
+  return(`Cool name, ${name}`)
+}
 
+// let nameGreeting = nameCheck
+// console.log(nameGreeting("Nate"))
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -150,7 +189,19 @@ function exclaimFour(str) {
   Otherwise, you should return the string 'you need to evaluate your favorite color choice'
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
+function faveColorFinder (color){
+  if(color === 'Red'){
+    return('Red is a great color')
+  }else if (color === 'Green'){
+    return(' Green is the best')
+  }else if(color === 'Black'){
+    return('Black is so trendy')
+  }else 
+  return(`${color}? You need to evaluate yout favorite color choice`)
+}
 
+// let colorRating = faveColorFinder
+// console.log(colorRating("Blue"))
 //CODE HERE
 
 
